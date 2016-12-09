@@ -22,7 +22,7 @@ Module.register('mmm-facial-recognition',{
 		// force the use of a usb webcam on raspberry pi (on other platforms this is always true automatically)
 		useUSBCam: false,
 		// Path to your training xml
-		trainingFile: 'modules/MMM-Facial-Recognition/training.xml',
+		trainingFile: 'modules/mmm-facial-recognition/training.xml',
 		// recognition intervall in seconds (smaller number = faster but CPU intens!)
 		interval: 2,
 		// Logout delay after last recognition so that a user does not get instantly logged out if he turns away from the mirror for a few seconds
