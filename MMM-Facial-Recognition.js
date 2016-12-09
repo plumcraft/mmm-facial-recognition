@@ -7,7 +7,7 @@
  * MIT Licensed.
  */
 
-Module.register('MMM-Facial-Recognition',{
+Module.register('mmm-facial-recognition',{
 	
 	defaults: {
 		// 1=LBPH | 2=Fisher | 3=Eigen
