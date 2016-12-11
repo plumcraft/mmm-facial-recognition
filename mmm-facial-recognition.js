@@ -75,6 +75,12 @@ Module.register('mmm-facial-recognition',{
 			});
 		});
 		
+		MM.getModules().withClass(this.config.everyoneClass).enumerate(function(module) {
+                        module.hide(1000, function() {
+                                Log.log(module.name + ' is hidden.');
+                        });
+                });
+		
 		MM.getModules().withClass(this.config.defaultClass).exceptWithClass(this.config.everyoneClass).enumerate(function(module) {
 			module.show(1000, function() {
 				Log.log(module.name + ' is shown.');
