@@ -93,6 +93,7 @@ Module.register('mmm-facial-recognition',{
 			if (payload.user == -1){
 				this.current_user = this.translate("stranger")
 				this.current_user_id = payload.user;
+				this.login_user()
 			}
 			else{				
 				this.current_user = this.config.users[payload.user];
