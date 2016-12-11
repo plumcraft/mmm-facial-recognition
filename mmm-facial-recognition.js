@@ -53,6 +53,12 @@ Module.register('mmm-facial-recognition',{
 			});
 		});
 		
+		MM.getModules().withClass(this.config.everyoneClass).enumerate(function(module) {
+                        module.show(1000, function() {
+                                Log.log(module.name + ' is shown.');
+                        });
+                });
+		
 		MM.getModules().withClass(this.current_user).enumerate(function(module) {
 			module.show(1000, function() {
 				Log.log(module.name + ' is shown.');
